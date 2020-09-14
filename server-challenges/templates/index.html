@@ -1,0 +1,31 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Address search</title>
+
+  <form>
+    <label for="fname">Search for Address</label><br>
+    <input type="text"  name="search_term"><br>
+
+    <input type="submit" value="Submit" formmethod="post" >
+
+  </form>
+
+
+  {% for my_item in addresses %}
+
+  <h1>{{ my_item.address }}</h1>
+
+  {% endfor %}
+
+
+
+</head>
+
+<body>
+  <script src="js/scripts.js"></script>
+</body>
+</html>
